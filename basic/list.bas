@@ -10,4 +10,5 @@ END TYPE
 100 PRINT firstList.value
 103 IF fistList.data == "" THEN GOTO 110
 105 firstList = firstList.nextList
+107 GOTO 100
 110 END
