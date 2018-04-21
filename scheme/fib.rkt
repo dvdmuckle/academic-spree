@@ -1,0 +1,6 @@
+(define (fib n)
+  (define (fof n a b)
+    (cond ((= n 0) a)
+	  ((= n 1) b)
+	  (#t (fof (- n 1) b (+ a b)))))
+  (fof n 0 1))
