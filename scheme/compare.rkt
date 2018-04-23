@@ -1,2 +1,5 @@
 (define (compare str1 str2)
   (equal? str1 str2))
+(define x (read-line))
+(define y (read-line))
+(if (compare x y) (displayln "Inputs are the same") (displayln "Inputs are not the same"))

@@ -1,2 +1,8 @@
 (define (list-example l)
   (car (cdr l)))
+(define x "List ")
+(define y "test\n")
+(define z "not printed")
+(define l (cons x (cons y z)))
+(display (car l))
+(display (list-example l))

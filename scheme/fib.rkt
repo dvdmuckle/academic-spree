@@ -4,3 +4,5 @@
 	  ((= n 1) b)
 	  (#t (fof (- n 1) b (+ a b)))))
   (fof n 0 1))
+(define num (string->number (if (eof-object? in) (error "Requires input") in)))
+(if (number? num) (displayln (fib num)) (error "Input not a number")))

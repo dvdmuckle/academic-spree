@@ -23,6 +23,6 @@ while [[ "$prog_lang" != [1-5] ]]; do
 done
 declare -A langs=( ["1"]="basic" ["2"]="scheme" ["3"]="c" ["4"]="java" ["5"]="go")
 declare -A progs=( ["1"]="echo" ["2"]="sum" ["3"]="compare" ["4"]="list" ["5"]="fib")
-exec "{$langs[$prog_lang]}".sh "{$progs[$prog_number]}"
-
-
+./"${langs[$prog_lang]}".sh "${progs[$prog_number]}"
+sleep 15
+bash program_prompt.sh

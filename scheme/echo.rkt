@@ -2,3 +2,4 @@
   (define in (read-line))
   (display "You said ")
   (displayln in))
+(echo)
