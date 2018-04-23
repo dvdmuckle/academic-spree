@@ -1,19 +1,19 @@
-public class List {
+public class list {
 	private Object data;
-	private List next;
+	private list next;
 
-	public List(Object data) {
+	public list(Object data) {
 		this.data = data;
 	}
 
-	//Append a new node to the List with data
+	//Append a new node to the list with data
 	public void append(Object data) {
-		List newnode = new List(data);
+		list newnode = new list(data);
 		this.next = newnode;
 	}
 
-	//Get the next element in the List
-	public List next() {
+	//Get the next element in the list
+	public list next() {
 		return this.next;
 	}
 
@@ -22,13 +22,13 @@ public class List {
 		this.data = data;
 	}
 
-	//Return the data field in the List
+	//Return the data field in the list
 	public Object get() {
 		return this.data;
 	}
 	public static void main(String[] args) {
 		String firstData = "Test ";
-		List newList = new List(firstData);
+		list newList = new list(firstData);
 		String secondData = "list\n";
 		newList.append(secondData);
 		while(newList!=null) {
