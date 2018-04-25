@@ -24,5 +24,5 @@ done
 declare -A langs=( ["1"]="basic" ["2"]="scheme" ["3"]="c" ["4"]="java" ["5"]="go")
 declare -A progs=( ["1"]="echo" ["2"]="sum" ["3"]="compare" ["4"]="list" ["5"]="fib")
 ./"${langs[$prog_lang]}".sh "${progs[$prog_number]}"
-sleep 15
+sleep 10
 bash program_prompt.sh
